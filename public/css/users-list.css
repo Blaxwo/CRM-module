@@ -1,0 +1,85 @@
+h1 {
+    color: #2196F3;
+    font-size: 24px;
+}
+ul li {
+    margin-bottom: 10px;
+}
+.btn-primary {
+    background-color: #2196F3;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.create-btn{
+    margin: 10px 0 10px 0;
+}
+.mb-3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form-group{
+    margin-right: 20px;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table a.btn {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 30px;
+}
+.flex .hidden{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 30px;
+}
+
+.flex .hidden .relative{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 10px;
+}
+.btn-create{
+    padding: 10px 20px;
+    width: 80px;
+    display: block;
+    margin-top: 10px;
+}
+.btn-filter{
+    padding: 5px 10px;
+    width: 60px;
+}
