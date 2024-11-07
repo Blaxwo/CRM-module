@@ -6,15 +6,13 @@ A Laravel-based application for managing user data and sending email notificatio
 - [Installation](#installation)
 - [Environment Setup](#environment-setup)
 - [Running the Project Locally](#running-the-project-locally)
-- [Using the Application](#using-the-application)
-- [Troubleshooting](#troubleshooting)
 
 ## Prerequisites
 - **PHP**: Version 8.x or later
 - **Composer**: Dependency manager for PHP
 - **Node.js** and **npm**: Required for frontend asset management
-- **MySQL** or **PostgreSQL**: For database storage
-- **Redis** (Optional): For handling queues if email notifications are queued
+- **MySQL**: For database storage
+- **Redis**: For handling queues if email notifications are queued
 
 Make sure all tools above are installed and available in your system path.
 
@@ -24,8 +22,8 @@ Make sure all tools above are installed and available in your system path.
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Blaxwo/CRM-module.git
+cd CRM-module
 ```
 
 ## 2. Install PHP Dependencies
@@ -71,3 +69,26 @@ Open the `.env` file in a text editor and configure the following variables:
 - `OPENWEATHER_API_KEY`: Your API key for OpenWeather
 - `OPENWEATHER_BASE_URL`: "https://api.openweathermap.org/data/2.5/forecast"
 - `CACHE_DURATION`: 60
+
+## Running the Project Locally
+
+### 1. Run Migrations
+Create your database tables by running the migrations:
+
+```bash
+php artisan migrate
+```
+This will create all the necessary tables defined in the migrations.
+
+### 2. Seed the Database
+
+```bash
+php artisan db:seed
+```
+This will create some elements in db.
+
+### 3. Start the Development Server
+
+```bash
+php artisan serve
+```
